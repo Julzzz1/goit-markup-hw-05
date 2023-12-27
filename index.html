@@ -520,30 +520,78 @@
         >
 
           <div class="field">
-            <label>Name
-              <div class="">
-                <input type="text" required/></label>
-                 <svg class="form-icon">
-                  <use href="./images/icons.svg#icon-person"></use>
-                 </svg>
-                 
+            <label class="modal-form-label" for="user-name" >Name
+              <div class="modal-input-icon">
+               <input 
+               class="form-input" 
+               type="text" 
+               name="user-name" 
+               id="Name"/>
+               <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+               </svg>
               </div>
+            </label>
           </div>
 
           <div class="field">
-            <label>Phone<input type="tel" /></label>
+            <label class="modal-form-label" for="user-phone" >Phone
+              <div class="modal-input-icon">
+               <input 
+               class="form-input" 
+               type="text" 
+               name="user-phone" 
+               id="Phone"/>
+               <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+               </svg>
+              </div>
+            </label>
           </div>
+
           <div class="field">
-            <label>Email
-              <input type="email" /></label>
+            <label class="modal-form-label" for="user-email">Email
+              <div class="modal-input-icon">
+               <input 
+               class="form-input" 
+               type="text" 
+               name="user-email" 
+               id="Email"/>
+               <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+               </svg>
+              </div>
+            </label>
           </div>
-          <label class="form-comment">
             
+            <div class="field">
+             <label class="modal-form-label" for="user-comment">Comment
+             <div class="modal-input-icon">
+               <textarea
+               class="comment-area"
+               id="user-comment"
+               name="user-comment"
+               placeholder="Text input"></textarea>
+             </div>
+             </label>
+            </div> 
 
-          </label>
-          <input type="checkbox" name="policy" value="privacy policy" />I accept the terms and conditions of the 
+            <div class="field privacy-field">
+             <input 
+             class="privacy-modal"
+             type="checkbox"
+             name="user-privacy"
+             id="user-privacy" required
+             value="true"/>
+             <label class="modal-form-label" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg class="icon-field-checked" width="10" height="8">
+                 <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a>             </label>
+            </div>
 
-          <button type="submit">Send</button>
+          <button class="submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
